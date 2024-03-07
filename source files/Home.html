@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashStudy</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="mdb5/css/mdb.min.css">
+</head>
+ <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <span class="black-text">Flash</span>Study
+            </div>
+            <div class="navbar-middle">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="flashcards.html">Flashcards</a>
+                <a href="#Quiz">Quiz</a>
+            </div>
+            <div class="navbar-right">
+                <i data-lucide="Search"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+
+          <input class="special-search" placeholder="Search" />
+            </div>
+
+            <div class="navbar-right-end">
+                <a href="#" class="btn btn-success">Log in</a>
+                <a href="#" class="btn btn-outline-primary">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        #intro{
+            height: 40vh;
+            position: relative;
+        }
+
+        .text{
+            position: absolute;
+            top: 5em;
+            width: 600px;
+            left: 9em;
+        }
+
+        .text p{
+            position: absolute;
+            left: 12em;
+            width: 13em;
+            bottom: -14em;
+        }
+
+        .text h1{
+            position: absolute;
+            width: 5em;
+            top: -0em;
+            justify-content: left;
+        }
+
+        p{
+            font-size: 1.5em;
+            color: black;
+            
+        }
+
+        .Paragraph{
+            height: 25em;
+            width: 25em;
+            background-image: radial-gradient(peru, cyan);
+            border-radius: 50%;
+            position: absolute;
+            right: 3em;
+            top: 3em;
+        }
+
+        img{
+            position: relative;
+            left: -5.5em;
+            top: 0em;
+            transform: rotate(50deg);
+            width: 20em;
+            height: 22em;
+        
+        }
+
+        .img{
+            height: 20em;
+            z-index: 1;
+            position: relative;
+            left: 4em;
+            top: 5em;
+            transform: rotate(-20deg);
+        }
+
+        .btn-fc{
+            position: absolute;
+            top: 33em;
+            left: 8em;
+            border-radius: 0.2em;
+            background-color: darkcyan;
+            padding: 25px 20px;
+            font-size: 15px;
+            color: white;
+
+        }
+    </style>
+
+        <section id="intro">
+            <div class="text">
+                <h1>We make studying easier, faster, interesting and more interactive</h1>
+                <p>A better way to study with flashcards is here. FlashStudy helps you create your own flashcards,
+                    which eases memorization, allows access for teachers to set quizzes for students
+                    and tracks student's progress.
+                </p>
+            </div>
+            
+            <div class="Paragraph">
+                <img class="img" src="images/OIP2.png" alt="">
+                <img src="images/OIP2.png" alt="">
+
+               
+            </div>
+            <div>
+                <button class="btn btn-info">Find Flashcards</button>
+            </div>       
+                    
+        </section>
+  </body>
+</html>

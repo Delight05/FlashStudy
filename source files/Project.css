@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* Apply Montserrat font to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1025%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(242%2c 243%2c 244%2c 1)'%3e%3c/rect%3e%3cpath d='M2.67 129.19L50.3 156.69L50.3 211.69L2.67 239.19L-44.96 211.69L-44.96 156.69zM50.3 541.69L97.94 569.19L97.94 624.19L50.3 651.69L2.67 624.19L2.67 569.19zM97.94 129.19L145.57 156.69L145.57 211.69L97.94 239.19L50.3 211.69L50.3 156.69zM97.94 294.19L145.57 321.69L145.57 376.69L97.94 404.19L50.3 376.69L50.3 321.69zM145.57 541.69L193.2 569.19L193.2 624.19L145.57 651.69L97.94 624.19L97.94 569.19zM193.2 459.19L240.83 486.69L240.83 541.69L193.2 569.19L145.57 541.69L145.57 486.69zM383.73 129.19L431.36 156.69L431.36 211.69L383.73 239.19L336.1 211.69L336.1 156.69zM431.36 211.69L479 239.19L479 294.19L431.36 321.69L383.73 294.19L383.73 239.19zM574.26 -35.81L621.9 -8.31L621.9 46.69L574.26 74.19L526.63 46.69L526.63 -8.31zM574.26 129.19L621.9 156.69L621.9 211.69L574.26 239.19L526.63 211.69L526.63 156.69zM621.9 376.69L669.53 404.19L669.53 459.19L621.9 486.69L574.26 459.19L574.26 404.19zM764.79 129.19L812.43 156.69L812.43 211.69L764.79 239.19L717.16 211.69L717.16 156.69zM812.43 376.69L860.06 404.19L860.06 459.19L812.43 486.69L764.79 459.19L764.79 404.19zM907.69 46.69L955.32 74.19L955.32 129.19L907.69 156.69L860.06 129.19L860.06 74.19zM907.69 211.69L955.32 239.19L955.32 294.19L907.69 321.69L860.06 294.19L860.06 239.19zM907.69 376.69L955.32 404.19L955.32 459.19L907.69 486.69L860.06 459.19L860.06 404.19zM860.06 459.19L907.69 486.69L907.69 541.69L860.06 569.19L812.43 541.69L812.43 486.69zM1002.96 46.69L1050.59 74.19L1050.59 129.19L1002.96 156.69L955.32 129.19L955.32 74.19zM1002.96 376.69L1050.59 404.19L1050.59 459.19L1002.96 486.69L955.32 459.19L955.32 404.19zM955.32 459.19L1002.96 486.69L1002.96 541.69L955.32 569.19L907.69 541.69L907.69 486.69zM1050.59 -35.81L1098.22 -8.31L1098.22 46.69L1050.59 74.19L1002.96 46.69L1002.96 -8.31zM1098.22 541.69L1145.86 569.19L1145.86 624.19L1098.22 651.69L1050.59 624.19L1050.59 569.19zM1193.49 46.69L1241.12 74.19L1241.12 129.19L1193.49 156.69L1145.86 129.19L1145.86 74.19zM1193.49 211.69L1241.12 239.19L1241.12 294.19L1193.49 321.69L1145.86 294.19L1145.86 239.19zM1241.12 459.19L1288.75 486.69L1288.75 541.69L1241.12 569.19L1193.49 541.69L1193.49 486.69zM1288.75 541.69L1336.39 569.19L1336.39 624.19L1288.75 651.69L1241.12 624.19L1241.12 569.19zM1384.02 211.69L1431.65 239.19L1431.65 294.19L1384.02 321.69L1336.39 294.19L1336.39 239.19z' stroke='rgba(193%2c 204%2c 214%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-2.83 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM-2.83 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM-50.46 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM-50.46 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 651.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM-2.83 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM-2.83 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM92.44 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM44.8 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM187.7 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM187.7 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 651.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM187.7 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM235.33 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM235.33 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM140.07 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM378.23 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM425.86 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM425.86 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM378.23 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM330.6 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM330.6 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM473.5 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM473.5 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM425.86 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM378.23 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 -35.81 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 -8.31 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM521.13 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM521.13 -8.31 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM521.13 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM521.13 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM664.03 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM664.03 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM616.4 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM568.76 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM759.29 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM806.93 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM806.93 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM759.29 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM711.66 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM711.66 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM806.93 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM806.93 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM759.29 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM759.29 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM902.19 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM854.56 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM806.93 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 376.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 404.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM949.82 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 -35.81 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1092.72 -8.31 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1092.72 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM997.46 -8.31 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1092.72 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1092.72 651.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1045.09 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 46.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 156.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 129.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 74.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1140.36 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 459.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1283.25 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1283.25 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 541.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1187.99 486.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1330.89 569.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1330.89 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1283.25 651.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1235.62 624.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1378.52 211.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1426.15 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1426.15 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1378.52 321.69 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1330.89 294.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0zM1330.89 239.19 a5.5 5.5 0 1 0 11 0 a5.5 5.5 0 1 0 -11 0z' fill='rgba(193%2c 204%2c 214%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1025'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+   }
+
+   /* home page */
+.navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 60px;
+    margin: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+.navbar-right{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 100px 12px 12px;
+    margin: 3px 12px;
+}
+.navbar-middle {
+  font-weight: 400;
+   display: flex;
+   gap: 30px;
+   flex-grow: 1;
+   justify-content: center;
+    align-items: center;
+}
+
+.navbar-middle a{
+    color: black;
+}
+
+.navbar-left{
+    display: flex;
+    margin-left: 1.5%;
+    font-size: 1.5rem;
+    color: peru;
+    font-weight: 900;
+}
+
+.navbar-right-end{
+    display: flex;
+    gap: 20px;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.black-text {
+    color: black;
+    font-size: 2rem;
+}
+
+/* a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+} */
+
+a:hover{
+    text-decoration: underline;
+    color: darkcyan;
+    font-size: 1.5em;
+    
+}
+
+.special-search{
+    border: 0;
+    padding: 5px;
+}
+
+.special-search:focus{
+    outline: none;
+}
+
+/* .btn{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: 600;
+    
+} */
+
+/* .btn-signup {
+    background-color: peru;
+    border-color: peru;
+    
+}
+
+.btn-login:hover{
+    background-color: white;
+    font-size: large;
+    color: black;
+}
+
+.btn-signup:hover{
+    background-color: orange;
+    font-size: large;
+    color: rgb(32, 82, 82);
+} */
+
+
+.text{
+    display: flex;
+    justify-content: column;
+    color: darkcyan;
+    gap: 20%;
+    
+}
+
+img{
+    border-radius: 0.5rem;
+    max-height: 1000px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
+.Paragraph{
+    display: flex;
+    top: 50%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    font-size: 40em;
+}
+
+label{
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.btn2{
+    background-color: white;
+    padding: 10px 30px 10px 10px;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+input{
+    border: solid 1px grey;
+    border-radius: 0.3rem;
+    padding: 12px 200px 12px 12px;
+    margin: 0.2rem;
+    color: gray;
+}
+
+.login2{
+    color: blue;
+    text-decoration: underline;
+}
+
+.login2:hover{
+    color: blue;
+}
+
+/* signup page */
+
+.signupbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    color: black;
+    justify-content: center;
+}
+
+img{
+    width: 20em;
+    height: 30em;
+}
+
+.form{
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: rgb(244, 211, 179);
+    box-shadow: inset;
+    margin: 8px;
+    padding: 40px;
+}
+
+.signup-btn{
+    background-color: peru;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 150px;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin: 4%;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+
+ /* flashcards page */
+.container2{
+    width: 90vw;
+    max-width: 50rem;
+    border: 1px solid black;
+    position: relative;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+
+button{
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    background-color: darkcyan;
+    cursor: pointer;
+    margin-left: 7px;
+    margin-top: 12px;
+}
+
+.btncard{
+    font-size: 1rem;
+    background-color: peru;
+    color: black;
+    padding: 10px 9px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.create-box{
+    width: 80vw;
+    max-width: 29rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.Flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5) ;
+}
+
+.flashcard h2{
+    font-size: 1rem;
+}
+
+label{
+    color: black;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    width: 100%;
+    padding: 1rem 0.3rem;
+    border: 1px solid grey;
+    outline: none;
+    color: black;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+@media(max-width:768px){
+    .flashcard{
+        margin: auto;
+    }
+
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:480px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+        .create-box{
+            width: 100%;
+        }
+
+    .flashcard{
+        width: 100%;
+    }
+}
+
+
+
+
+ 
+
+/* subjects */
+
+/* about */
+
+
+
+
+
+
+
+
+
+

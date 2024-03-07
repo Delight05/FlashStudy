@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: solid 1px cyan;
+    border-radius: 0.5rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 50px 50px;
+}
+
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: cyan;
+    font-size: large;
+}
+
+label{
+    color: black;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    width: 100%;
+    padding: 1rem 0.3rem;
+    border: 1px solid grey;
+    outline: none;
+    color: black;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.result{
+    margin-top: 15px;
+}

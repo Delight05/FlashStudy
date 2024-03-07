@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project.css">
+</head>
+<body>
+    
+    
+    <div class="container2">
+     <div class="nav">
+            <h1>Flashcards</h1>
+         <div>
+             <button onclick="showCreateCardBox()" class="btncard">New Cards</button>
+             <button onclick="delFlashcards()" class="btncard">Del Cards</button>
+         </div>
+      </div>
+    </div>
+
+        <div id="card-con">
+                <div class="create-box">
+                    <h2>Create Flashcard</h2>
+        
+        <label for="question">Question</label>
+        <textarea class="input" id="question" placeholder="Type the question here..." 
+        rows="3"></textarea>
+        <label for="answer">Answer</label>
+        <textarea class="input" id="answer" placeholder="Type the answer here..."
+        rows="4"></textarea>
+        <div>
+            <button id="save" onclick="addFlashcard()">Save</button>
+            <button id="close" onclick="hideCreateBox()">Close</button>
+        </div>
+        </div>
+            <div class="Flashcards"></div>
+        </div>
+    
+        
+      
+    <script>
+
+         const flashcards = document.getElementsByClassName("flashcards")[0];
+         const createBox = document.getElementsByClassName("create-box")[0];
+         const question = document.getElementById("question");
+          const answer = document.getElementById("answer");
+         const savebtn = document.getElementById("save");
+
+           let questiondata = localStorage.getItem("question");
+             inputquestion.value = questiondata
+            let answerdata = localStorage.getItem("answCer");
+            inputansweranswer.value = answerdata;
+
+         savebtn.addEventListener("click", addFlashcard);
+         
+           function addFlashcard() {
+          const inputquestion = question.value;
+           console.log(inputquestion);
+          
+           const inputanswer = answer.value;
+           console.log(inputanswer);
+           var div = document.getElementById("Flashcards");
+                div.innerHTML = inputquestion.value;
+
+         localStorage.setItem("question", inputquestion);
+          localStorage.setItem("answer", inputanswer);
+
+           }
+
+           function hideCreateBox(){
+            createBox.style.display = "none";
+         }
+
+            function showCreateCardBox(){
+                createBox.style.display = "block";
+            }
+    
+    
+
+
+    </script>
+
+ </body>
+</html>

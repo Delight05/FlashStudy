@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    
+    <div class="container">
+     <div class="con-name">
+        <label for="name">Your name</label>
+        <textarea class="input" id="name" placeholder="Your name" 
+        rows="2"></textarea>
+        <button id="save">Save</button>
+        <div class="result">
+        <label for="result">Result</label>
+        <textarea class="input" id="result" placeholder="result"
+        rows="1"></textarea>
+        </div>
+     </div>
+    </div>
+
+
+    <script>
+
+       const name = document.getElementById("name");
+       const result = document.getElementById("result");
+        const myButton = document.getElementById("save");
+
+            let data = localStorage.getItem("name")
+            result.value = data;
+    
+        myButton.addEventListener("click", myfunction);
+
+        function myfunction() {
+            const inputTextvalue = name.value
+            console.log(inputTextvalue)
+            result.value = inputTextvalue 
+            localStorage.setItem("name", inputTextvalue);
+          
+       } 
+        
+    </script>
+
+</body>
+</html>
