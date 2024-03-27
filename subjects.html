@@ -13,7 +13,12 @@
             <div class="navbar-left">
                 <span class="black-text">Flash</span>Study
             </div>
-           
+            <div class="navbar-middle">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="Report-page.html">Report page</a>
+                <a href="Quiz.html">Quiz</a>
+            </div>
             <div class="navbar-right">
                 <i data-lucide="Search"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -27,15 +32,20 @@
     </header>
 
 
-    <h1>Subjects</h1>
+    <h1>Courses</h1>
 
     <div class="list">
+    <div class="list1">
         <ul>
-        <li><a href="#Computer Science">Compueter Science</a></li>
+        <li><a href="#Digital literacy">Compueter Science</a></li>
         <li><a href="#Language">Language</a></li>
         <li><a href="System Analysis">Flashcards</a></li>
         <li><a href="#Computer Technology">Computer Technology</a></li>
         <li><a href="#Discrete Maths">Discrete Maths</a></li>
+        </ul>
+        </div>
+        <ul>
+        <div class="list2">
         <li><a href="#Case Study">Case Study</a></li>
         <li><a href="#History">History</a></li>
         <li><a href="#Law">Law</a></li>
@@ -43,6 +53,9 @@
         <li><a href="#">Void</a></li>
     </ul>
     </div>
+    </div>
+
+    <a href="createfc.html" class="btn btn-info">Create flashcards</a>
 
         <style>
 
@@ -51,17 +64,52 @@
                 font-weight: 500;
                 position: absolute;
                 top: 2em;
-                font-size: 3em;
+                font-size: 4em;
+                position: relative;
+                top: 0.5em;
+                left: -10em;
             }
 
             .list a ul{
                 color: black;
-                display: flex;
                 margin: 15px;
                 margin-left: 25px;
                 position: absolute;
-                top: 10em;
+                bottom: 20em;
 
+            }
+
+            .list1{
+                position: relative;
+                left: 5em;
+                
+            }
+
+            .list2{
+                position: relative;
+                left: 3em;
+
+            }
+
+            .list{
+                position: relative;
+                top: 2em;
+                display: flex;
+                flex-direction: row;
+                gap: 8em;
+                font-size: 3em;
+            }
+
+            a{
+                color: darkcyan;
+            }
+
+            .btn-info{
+                position: absolute;
+                bottom: 7em;
+                left: 10em;
+                padding: 20px 25px;
+                font-size: 2em;
             }
         </style>
 </body>

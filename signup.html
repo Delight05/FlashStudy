@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="mdb5/css/mdb.min.css">
+</head>
+<body>
+
+  <section class="signupbody">
+    <main>
+        <div class="imgdiv">
+          <img src="images/OIP2.png">
+        </div>
+                <h1>Sign up to FlashStudy</h1>
+         
+        <div>
+                <form method="Post">
+
+                     <label>Username</label>
+                     <input type="text" name="First name">
+                     <label>Email</label>
+                     <input type="email" name="email">
+                     <label>Password</label>
+                     <input type="text" name="Password">
+                </form>
+              
+                                     <button class="signup-btn">Sign Up</button>
+                                    <p class="last-text">Already have an account?<a href="login.html" class="login2">Log in</a></p>
+              </div>
+        
+        <hr>
+    
+  </main>
+  </section>
+
+<style>
+
+  /* signup page */
+
+.signupbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    color: black;
+    justify-content: center;
+}
+
+img{
+    width: 25em;
+    height: 40em;
+    position: relative;
+    top: -1em;
+}
+
+main form{
+    /* background-image: linear-gradient(white, peru); */
+    box-shadow: inset;
+    margin: 15px;
+    padding: 40px;
+    height: 40vh;
+    width: 50vh;
+    position: relative;
+    left: 3em;
+    
+}
+
+label{
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 1.5em;
+  position: relative;
+  left: 5em;
+  top: -2.5em;
+}
+
+h1{
+  font-size: 4em;
+
+}
+
+.signup-btn{
+    background-color: peru;
+    color: white;
+    cursor: pointer;
+    padding: 13px 140px;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 4%;  
+    position: relative;
+    left: 4.5em;
+    top: -2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+</style>
+ </body>
+</html>
