@@ -17,14 +17,14 @@
                 <h1>Sign up to FlashStudy</h1>
          
         <div>
-                <form method="Post">
+                <form method="POST">
 
                      <label>Username</label>
-                     <input type="text" name="First name">
+                     <input type="text" name="name" id="name" required>
                      <label>Email</label>
-                     <input type="email" name="email">
+                     <input type="email" name="email" id="email" required>
                      <label>Password</label>
-                     <input type="text" name="Password">
+                     <input type="text" name="Password" id="password" required>
                 </form>
               
                                      <button class="signup-btn">Sign Up</button>
@@ -35,6 +35,52 @@
     
   </main>
   </section>
+
+
+  <?php
+
+      //database connection
+
+        $servername  = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "Register";
+
+        //create connection
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        //check connection
+        if($conn->connect_errno){
+          die("connection fail" . $conn->connecton_errno);
+        }
+
+        //process form submission
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+          $username = $_POST["username"];
+          $email = $_POST["email"];
+          $password = $_POST["password"];
+        }
+
+        //insert data into database
+        $sql = "INSERT INTO user(id,name,email,password,role) VALUES('$id', '$name', '$email', '$password', '$role')";
+
+        if($conn->query($sql)===TRUE){
+          echo "Sign up successful";
+        }
+        else{
+          echo "Error:" .$sql. "<br>". $conn->error;
+        }
+
+        //close database connection
+        $conn->close();
+
+
+
+
+
+
+?>
 
 <style>
 
